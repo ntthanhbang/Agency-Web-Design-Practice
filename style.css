@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
-  margin: 50px 50px 0 50px;
+  margin: 50px 50px 0 50px; /* margin of the webpage */
   background-color: #faf9f6;
   display: flex;
   flex-direction: column;
@@ -14,8 +14,55 @@ h1 {
   font-size: 5rem;
 }
 
+#creative {
+  color: darkblue;
+}
+
 footer {
   text-align: right;
   color: midnightblue;
+}
+
+.tile-image {
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+
+.card {
+  width: 45%; /*If use 50%, it will take all the space except the margin, the gap between is created by the 10% left*/
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+@media (max-width: 680px) {
+  .logo {
+    width: 150px;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+    text-align: center;
+  }
+
+  .card {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+  
+  .tile-image {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
 }
 
